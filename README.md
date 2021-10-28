@@ -26,3 +26,64 @@ are the apis that need to be built.
 1. Catalog will have products which belong a certain category
 2. Every category will have its own attributes(ex category apparels/shirts will have attributes like color, size, material )
 3. every product will be associated with a category,which means the product acquires the category attributes, and the product can give its own values for the attributes.
+
+## Example of a product in a catalog application:
+TIP : A product when being created to a apparels/shirts category will get attributes of that
+category ,and the user/product owner needs to give some values for those respective
+attributes.
+
+NOTE : the below mentioned example is a just representation of a product, Developer
+change the schema if she/he deemed necessary
+
+```
+[
+{
+productName : red stripes pontic shirt
+ProductID: 1hy26msd8h9
+categoryId: 12
+categoryName:apparels/shirts
+productAttributes/category product attributes
+[
+{
+attributeId: 123
+attributeName : color
+attributevalue : Red
+},
+{
+attributeId: 456
+attributeName : size
+attributevalue : Large
+},
+{
+attributeId: 765
+attributeName : material
+attributevalue : linen
+}
+]
+},
+{
+productName : tea kettle
+ProductID: 1hy78gsd8h9
+categoryId: 21
+categoryName: kitchen accessories
+productAttributes/category product attributes
+[
+{
+attributeId: 123
+attributeName : brand
+attributevalue : morphy richards
+},
+{
+attributeId: 67
+attributeName : weight
+attributevalue : 12
+},
+{
+attributeId: 456
+attributeName : volume
+attributevalue : 30
+}
+]
+}
+]
+```
